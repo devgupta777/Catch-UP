@@ -20,7 +20,7 @@ const server=app.listen(PORT,console.log(`listening on port ${PORT}`.yellow.bold
 const io=require('socket.io')(server,{
     pingTimeout:60000,
     cors:{
-        origin:'http://localhost:3000'
+        origin:'https://catch-up-v0oj.onrender.com'
     },
 });
 io.on("connection",(socket)=>{
